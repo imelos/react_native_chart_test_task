@@ -6,12 +6,8 @@ export default function DetailsListItem({data}) {
   const {value, title} = data;
   return (
     <View style={styles.container}>
-      <View>
-        <Text>{title}</Text>
-      </View>
-      <View>
-        <Text>{typeof value === 'number' ? value.toFixed(2) : value}</Text>
-      </View>
+      <Text>{title}</Text>
+      <Text>{typeof value === 'number' ? value.toFixed(2) : value}</Text>
     </View>
   );
 }
